@@ -9,3 +9,8 @@
  8. Visit Recutter.agda
  9. Visit Perm.agda
 10. Visit Splitting.agda
+11. Revisit Recutter and explore NatRecut
+12. Visit Mask.agda
+13. Visit Tensor.agda
+14. Visit Vector.agda
+15. Visit Golden.agda

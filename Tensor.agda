@@ -12,7 +12,7 @@ open RECUTTER
 open SUBCOLLECTLEMMA
 
 _><_ : forall {I J} -> (I |> I) -> (J |> J) -> (I * J) |> (I * J)
-Cuts (C >< D) (i , j) = Cuts C i + Cuts D j
+Cuts   (C >< D) (i , j) = Cuts C i + Cuts D j
 inners (C >< D) {i , j} (inl c) = list (_, j) (inners C c)
 inners (C >< D) {i , j} (inr d) = list (i ,_) (inners D d)
 
