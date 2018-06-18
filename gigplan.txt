@@ -1,0 +1,11 @@
+ 1. Homework
+ 2. Show the old version
+ 3. Flash through Basics.agda, noting Sg
+ 4. Visit All.agda to establish All
+ 5. Visit Cutting.agda to establish |>
+ 6. Visit Ix.agda and Interior.agda
+      and we have our monad
+ 7. Visit Holey.agda
+ 8. Visit Recutter.agda
+ 9. Visit Perm.agda
+10. Visit Splitting.agda

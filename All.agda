@@ -4,7 +4,7 @@ open import Basics
 open import Ix
 
 All : {X : Set} -> (X -> Set) -> (List X -> Set)
-All P [] = One
+All P []        = One
 All P (x ,- xs) = P x * All P xs
 
 allPu : forall {X}{T : X -> Set} -> [ T ] -> [ All T ]
