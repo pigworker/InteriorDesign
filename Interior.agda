@@ -35,3 +35,9 @@ module INTERIOR {I}(C : I |> I) where
   extend k = ifold k (\ i x -> < x >)
 
   -- and we have a monad, not in Set, but in I -> Set
+
+open INTERIOR NatCut
+{-
+foo : Interior (\ n -> n == 3) 12
+foo = < ((3 , 9 , refl _)) 8>< (tile (refl _) , {!!} , <>) >
+-}

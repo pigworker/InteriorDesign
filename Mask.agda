@@ -43,6 +43,6 @@ module MASK {I}(C : I |> I) where
                         -> [ Interior O -:> Interior P -:> Interior Q ]
     mask {O}{Q} f = ifold f help where
       help :  [ Cutting C (Interior P -:> Interior Q) -:> Interior P -:> Interior Q ]
-      help i (c 8>< fs) (tile p) with pc i c p
-      ... | ps = < c 8>< allAp (inners C c) fs (all (\ _ -> tile) _ ps) >
-      help i (c 8>< fs) < c' 8>< ps > = < c 8>< allAp (inners C c) fs (chop i c' c ps) >
+      help i (c' 8>< fs) (tile p) with pc i c' p
+      ... | ps = < c' 8>< allAp (inners C c') fs (all (\ _ -> tile) _ ps) >
+      help i (c' 8>< fs) < c 8>< ps > = < c' 8>< allAp (inners C c') fs (chop i c c' ps) >
